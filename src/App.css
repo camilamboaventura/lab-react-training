@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.red-white-boxes {
+  height: 8rem;
+  width: 8rem;
+  border: solid 1px black;
+  
+}
+
+.out-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}

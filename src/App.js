@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+
 import logo from './logo.svg';
+
 import './App.css';
 import IdCard from './IdCard';
 import Greeting from './Greeting';
@@ -8,7 +10,12 @@ import Random from './Random';
 import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
-import DriverCard from './DriverCard'
+import DriverCard from './DriverCard';
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
 
 function App() {
   return (
@@ -105,9 +112,31 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-    </div>
+      <h2>LikeButtons</h2>
 
-   
+      <LikeButton />
+
+      <LikeButton />
+
+      <h2>Clickable Picture</h2>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+
+      <Dice />
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <NumbersTable  limit={12} />
+    </div>
   );
 }
 
